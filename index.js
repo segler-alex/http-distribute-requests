@@ -43,9 +43,9 @@ function updateCache() {
 // update cache first time
 updateCache();
 
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
     var random_host = cache[Math.floor(Math.random() * cache.length)];
-    res.redirect(302, random_host);
+    res.redirect(302, random_host + req.path);
 });
 
 app.listen(3000, function () {
