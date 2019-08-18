@@ -11,7 +11,7 @@ const resolve4 = util.promisify(dns.resolve4);
 const reverse = util.promisify(dns.reverse);
 
 const DNS_NAME = process.env.DNS_NAME || process.exit(1);
-const REFRESH_TIME = process.env.REFRESH_TIME || 5000;
+const REFRESH_TIME = parseInt(process.env.REFRESH_TIME) || 5000;
 
 let cache = [];
 
