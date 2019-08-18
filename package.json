@@ -1,7 +1,7 @@
 {
-  "name": "radiobrowser-distribute-requests",
+  "name": "http-distribute-requests",
   "version": "1.0.0",
-  "description": "redirects requests to radiobrowser servers randomly",
+  "description": "redirects requests to web servers randomly looking at dns entries",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/segler-alex/radiobrowser-distribute-requests.git"
+    "url": "git+https://github.com/segler-alex/http-distribute-requests.git"
   },
   "author": "segler_alex@web.de",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/segler-alex/radiobrowser-distribute-requests/issues"
+    "url": "https://github.com/segler-alex/http-distribute-requests/issues"
   },
-  "homepage": "https://github.com/segler-alex/radiobrowser-distribute-requests#readme",
+  "homepage": "https://github.com/segler-alex/http-distribute-requests#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
